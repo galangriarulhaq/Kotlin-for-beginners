@@ -1,4 +1,4 @@
-package com.dicoding.kotlin
+package com.dicoding.kotlin.functional
 
 fun factorialLoop(value: Int): Int{
     var result = 1

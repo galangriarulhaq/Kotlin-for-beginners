@@ -1,4 +1,8 @@
-package com.dicoding.kotlin
+package com.dicoding.kotlin.functional
+
+// Lambda expression, biasa disebut dengan anonymous function atau function literal
+// adalah fitur yang cukup populer sampai sekarang dalam dunia functional programming.
+
 
 fun main() {
     // Lambda Expression
@@ -69,7 +73,7 @@ fun main() {
     println(evenNumbers)
 
     // Call higher-order-function
-    println(hello("Luffy", {value: String -> value.toUpperCase() }))
+    println(hello("Luffy", { value: String -> value.toUpperCase() }))
 }
 
 
