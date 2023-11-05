@@ -12,12 +12,7 @@ fun main() {
     // Call higher-order-function
     printResult(10){value -> value + value}
 
-    // Call Lambda with receiver
-    val message1 = buildString {
-        append("Hello")
-        append(" Galang!")
-    }
-    println(message1)
+
 
     // Lambda Argument (it)
     val text = "Hello"
@@ -90,10 +85,5 @@ inline fun printResult(value: Int, sum: (Int) -> Int) {
 }
 
 // Lambda with receiver
-fun buildString(action: StringBuilder.() -> Unit): String {
-    val stringBuilder = StringBuilder()
-    stringBuilder.action()
-    return stringBuilder.toString()
-}
 
 fun isEvenNumber(number: Int) = number % 2 == 0
