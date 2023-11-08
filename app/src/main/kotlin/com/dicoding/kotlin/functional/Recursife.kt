@@ -1,5 +1,8 @@
 package com.dicoding.kotlin.functional
 
+// Recursive function adalah sebuah mekanisme di mana sebuah fungsi digunakan dari dalam fungsi itu sendiri.
+// Ini memungkinkan sebuah fungsi dapat berjalan beberapa kali.
+
 fun factorialLoop(value: Int): Int{
     var result = 1
     for (i in value downTo 1){
@@ -24,20 +27,6 @@ tailrec fun display(value: Int) {
     }
 }
 
-// inner function
-fun sum(valueA: Int, valueB: Int, valueC: Int): Int {
-    fun Int.validateNumber(){
-        if (this == 0) {
-            throw IllegalArgumentException("value must be better than 0")
-        }
-    }
-
-    valueA.validateNumber()
-    valueB.validateNumber()
-    valueC.validateNumber()
-
-    return valueA + valueB + valueC
-}
 
 fun main() {
     println(factorialLoop(5))
