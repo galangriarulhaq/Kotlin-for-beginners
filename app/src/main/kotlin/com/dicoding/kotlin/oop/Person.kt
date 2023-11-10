@@ -1,5 +1,4 @@
-package com.dicoding.kotlinoop
-
+package com.dicoding.kotlin.oop
 
 
 // this is default constructor

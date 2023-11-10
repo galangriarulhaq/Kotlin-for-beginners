@@ -1,4 +1,4 @@
-package com.dicoding.kotlinoop
+package com.dicoding.kotlin.oop
 
 class Car(ParamsBrand: String, ParamsYear: Int) {
     var brand: String = ParamsBrand

@@ -1,4 +1,4 @@
-package com.dicoding.kotlinoop
+package com.dicoding.kotlin.oop
 
 /**
  * visibility modifiers
